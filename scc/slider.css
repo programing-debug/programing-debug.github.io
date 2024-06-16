@@ -1,0 +1,89 @@
+/*------------------Estilos del menu------------------*/
+.nav {
+     <img src="8m.jpg">
+  position: absolute;
+  top: 60px;
+  left: -100%;
+  width: 100%;
+  transition: all 0.4s;
+}
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu__link {
+  display: block;
+  padding: 15px;
+  background: #4f5199;"
+  text-decoration: none;
+  color: #000;
+}
+.menu__link:hover, .select {
+	background: white;
+	color: #ff0022;
+}
+.mostrar {
+  left: 0;
+}
+
+/*------------------Estilos responsive------------------*/
+  .nav {
+    position: static;
+    width: auto;
+  }
+  .menu {
+    display: flex;
+  }
+  .icon-menu {
+    display: none;
+  }
+  .menu__link {
+    background: none;
+    font-size: 20px;
+  }
+  .select {
+    color: #000;
+    background: #90d2ff;
+  }
+
+
+/*--------------------------------------Slider--------------------------------------*/
+
+.slider {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 30s infinite alternate linear;
+}
+
+.slider li {
+	width: 90%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+.imagen:hover {filter: opacity(.5);}
